@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    color: #000000;
+}
+
+.heading-content {
+    padding-top: 109px;
+    padding-bottom: 95px;
+    max-width: 90%;
+    margin: auto !important;
+}
+
+.heading-content h1{
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    margin-bottom: 20px;
+}
+
+.heading-content h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.heading-content .subtitle {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 2px;
+}
+
+.team {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-members-profile{
+    flex: 33%;
+    max-width: 28%;
+    padding: 0 4px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.team-members-profile:nth-child(3n+2) {
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+
+.team-members-profile img {
+    vertical-align: middle;
+    max-width: 100%;
+    padding-right: 25px;
+  }
+
+.team-members-profile  .desc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    writing-mode: vertical-rl;
+    margin: 0;
+}
+
+.team-members-profile .name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    margin-top: 10px;
+    }
+
+.footer-text {
+    margin-top: 150px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .heading-content {
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
+    
+    .team-members-profile {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 15px;
+    }
+    
+    .team-members-profile:nth-child(even) {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    
+    .team-members-profile img {
+        padding-right: 10px;
+    }
+  }
